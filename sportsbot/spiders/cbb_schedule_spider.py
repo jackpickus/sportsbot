@@ -1,7 +1,7 @@
 import scrapy
 
-class ScheduleSpider(scrapy.Spider):
-    name = 'schedule'
+class CbbScheduleSpider(scrapy.Spider):
+    name = 'cbb_schedule'
 
     start_urls = [
         'https://www.sports-reference.com/cbb/schools/duke/men/2025-schedule.html'
