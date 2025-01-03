@@ -22,5 +22,5 @@ class ScheduleSpider(scrapy.Spider):
                 'W': row.xpath('//tr/td[@data-stat="wins"]/text()').getall(),
                 'L': row.xpath('//tr/td[@data-stat="losses"]/text()').getall(),
                 'Streak': row.xpath('//tr/td[@data-stat="game_streak"]/text()').getall(),
-                'Arena': row.xpath('//tr/td[@dtr/ata-stat="arena"]/text()').getall()
+                'Arena': row.xpath('//tr/td[@data-stat="arena"]/text()').getall()
             }
