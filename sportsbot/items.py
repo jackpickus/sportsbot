@@ -6,11 +6,17 @@ class SportsbotItem(scrapy.Item):
     # name = scrapy.Field()
     pass
 
+def serialize_home_away(value):
+    if value == '@':
+        return 'A'
+    else:
+        return 'H'
+
 class NbaPlayerItem(scrapy.Item):
     date = scrapy.Field()
     age = scrapy.Field()
     team = scrapy.Field()
-    home_away = scrapy.Field()
+    home_away = scrapy.Field(serializer=serialize_home_away)
     opponent = scrapy.Field()
     result = scrapy.Field()
     minutes = scrapy.Field()
