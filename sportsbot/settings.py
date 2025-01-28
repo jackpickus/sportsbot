@@ -17,7 +17,8 @@ NEWSPIDER_MODULE = "sportsbot.spiders"
 #USER_AGENT = "sportsbot (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+# Make False when getting player data
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
