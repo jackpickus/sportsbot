@@ -21,7 +21,7 @@ class NbaPlayerItem(scrapy.Item):
     threes_attempts = scrapy.Field()
     threes_percent = scrapy.Field()
     ft = scrapy.Field()
-    ft_attempts = scrapy.Field()
+    fta = scrapy.Field()
     ft_percent = scrapy.Field()
     orb = scrapy.Field()
     drb = scrapy.Field()
