@@ -1,6 +1,6 @@
 import scrapy
 
-class NbaScheduleSpider(scrapy.Spider):
+class NbaPlayerSpider(scrapy.Spider):
     name = 'nba_player'
 
     start_urls = [
