@@ -4,6 +4,15 @@ from sportsbot.items import NbaPlayerItem
 class NbaPlayerSpider(scrapy.Spider):
     name = 'nba_player'
 
+    custom_settings = {
+        'FEEDS': {
+            'nba_player.csv':  {
+                'format': 'csv',
+                'fields': ['date', 'age', 'team', 'home_away', 'opponent', 'result', 'minutes', 'fg', 'fga', 'fg_percent', 'threes', 'threes_attempts', 'threes_percent', 'ft', 'fta', 'ft_percent', 'orb', 'drb', 'trb', 'ast', 'stl', 'blk', 'tov', 'pf', 'pts', 'plus_minus'],
+            }
+        }
+    }
+
     start_urls = [
         'https://www.basketball-reference.com/players/e/edwaran01/gamelog/2025/'
     ]
